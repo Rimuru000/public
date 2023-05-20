@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Race Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="index.js"></script>
+	<div class="header">
+        <h1> Race Registration Form</h1>
+    </div>
+	<form>
+		<label for="email">E-mail:</label>
+		<input type="email" name="email" required><br><br>
+		
+		<label for="title">Title-</label><br>
+		<input type="radio" name="title" value="Mr." required> Mr.
+		<input type="radio" name="title" value="Mrs."> Mrs.
+		<input type="radio" name="title" value="Ms."> Ms.<br>
+		
+		<label for="first_name">first name:</label>
+		<input type="text" name="first_name" required pattern="[a-zA-Z]+">
+		
+		<label for="last_name">last name:</label>
+		<input type="text" name="last_name" required pattern="[a-zA-Z]+"><br><br>
+
+        <label for="postal">Complete Postal Mailing Address (with Postal Code & Country)</label><br>
+		<input type="text" name="postal" required pattern="[a-zA-Z]+"><br><br>
+		
+		<label for="phone">Phone:</label>
+		<input type="tel" name="phone" required pattern="8\d{9}">
+		
+		<label for="fax">Fax:</label>
+		<input type="tel" name="fax" required pattern="(\d{3})\d{3}-\d{4}"><br><br>
+		
+        <label for="occupation">Occupation:</label>
+        <select name="Occupation" required>
+			<option value="" disabled selected>Doctor</option>
+			<option value="single">Lawyer</option>
+				<option value="married"> Engineer</option>
+				<option value="divorced">Architect</option>
+                <option value="divorced">Construction worker</option>
+                <option value="divorced">Cleaner</option>
+                <option value="divorced">Other</option>
+		</select>
+
+       
+		
+
+		<label for="marital_status">Marital Status:</label>
+        <input type="tel" name="Martial_status" required pattern="[a-zA-Z]+">
+		<br><br>
+        <label for="T-shirt">T-shirt size:</label>
+        <select name="Size" required>
+			<option value="" disabled selected>Size</option>
+			<option value="single">S</option>
+				<option value="married">M</option>
+				<option value="divorced">L</option>
+		</select> <br>
+
+        
+        <label>Select Trip:</label>
+        <div class="radio-grid">
+            <div>
+                <input type="checkbox" name="title_trip" value="Mr." required>
+                <label>Stage Race</label>
+            </div>
+            <div>
+                <input type="checkbox" name="title_trip" value="Mrs.">
+                <label>Mt. Everest Challenge Marathon (4 day trip)</label>
+            </div>
+            <div>
+                <input type="checkbox" name="title_trip" value="Ms.">
+                <label>Mt. Everest Bike Rally</label>
+            </div>
+        </div>
+        
+        <label>I am a:
+        <div class="radio-grid">
+            <div>
+                <input type="checkbox" name="title_am" value="Mr." required>
+                <label>Runner</label>
+            </div>
+            <div>
+                <input type="checkbox" name="title_am" value="Mrs.">
+                <label>Walker</label>
+            </div>
+            <div>
+                <input type="checkbox" name="title_am" value="Ms.">
+                <label>Cyclist</label>
+            </div>
+        </div>
+        
+        
+        
+        <label>Smoker:
+        <div class="radio-grid">
+            <div>
+                <input type="radio" name="title_smoker" value="Yes">
+                <label>Yes</label>
+            </div>
+            <div>
+                <input type="radio" name="title_smoker" value="No">
+                <label>No</label>
+            </div>
+        </div><br>
+
+        <label for="room_sharing">Room Sharing Preference:</label>
+        <input type="tel" name="room_sharing" required pattern="[a-zA-Z]+">
+		<br><br>
+
+		
+        
+		<label for="id_number">Number:</label>
+		<input type="text" name="id_number" required pattern="(\d{3})\d{3}-\d{4}">
+
+		<label for="date_issued">Date Issued:</label>
+		<input type="date" name="date_issued" required>
+
+        <label for="where_issued">Where Issued:</label>
+		<input type="text" name="where_issued" required>
+
+		<label for="date_expired">Date Expires:</label>
+		<input type="date" name="date_expires" required><br><br>
+
+        <label for="Date_of_Birth">Date of Birth</label>
+        <input type="date" name="Date_of_Birth"></label>
+
+        <label for="age">Age:</label>
+		<input type="number" name="age" required min="1" max="70">
+		
+		<label for="Place">Place of birth:</label>
+        <input type="tel" name="Place" required pattern="[a-zA-Z]+">
+
+        <label for="city">Citizen of:</label>
+        <input type="tel" name="city" required pattern="[a-zA-Z]+">
+		<br><br>
+        <a href="https://r.mtdv.me/videos/cooking" alt="Cooking">See Booking Conditions for the trip</a> <br>
+        <label>
+            <div>
+                <input type="checkbox" name="title_am" value="Mr." required>
+                <label>I agree to all booking conditions</label>
+            </div>
+            </div>
+        </label> <br>
+		<button type="button" onclick="validateForm()">Send</button>
+	</form>
+	
+	
+    </body>
+</html>

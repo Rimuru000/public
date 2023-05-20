@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: center;
+    
+}
+.header h1{
+    background-color: #f0f04c;
+    padding: 4px 6px;
+    border-radius: 12px;
+}
+.radio-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
